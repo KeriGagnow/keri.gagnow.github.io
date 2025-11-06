@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keri Gagnow — Computer & Data Science Student</title>
+  <style>
+    :root{--accent:#0b6ef6;--muted:#555}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111;line-height:1.5}
+    .container{max-width:900px;margin:3rem auto;padding:1rem}
+    header{display:flex;gap:1rem;align-items:center}
+    img.headshot{width:96px;height:96px;border-radius:8px;object-fit:cover}
+    h1{margin:0}
+    .lead{color:var(--muted);margin-top:.25rem}
+    .buttons a{display:inline-block;margin:.5rem .5rem 0 0;padding:.5rem .75rem;border-radius:6px;text-decoration:none;color:white;background:var(--accent)}
+    section{margin-top:2rem}
+    .projects{display:grid;gap:1rem}
+    .card{border:1px solid #eee;padding:1rem;border-radius:8px}
+    footer{margin-top:3rem;color:var(--muted);font-size:.9rem}
+    @media(max-width:600px){header{flex-direction:column;align-items:flex-start}img.headshot{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Keri Gagnow</h1>
+        <div class="lead">Computer Science · Data Science — </div>
+        <div class="buttons">
+          <a href="resume.pdf" target="_blank">Resume (PDF)</a>
+          <a href="mailto:gagnowkeri@gmail.com">Contact</a>
+          <a href="https://github.com/KeriGagnow" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Selected projects</h2>
+      <div class="projects">
+        <div class="card">
+          <strong>Project A</strong> — one-line description. Tech: Python, PyTorch, FastAPI. <a href="#">Repo</a> · <a href="#">Demo</a>
+        </div>
+        <div class="card">
+          <strong>Project B</strong> — one-line description. Tech: R, Shiny, SQL. <a href="#">Repo</a> · <a href="#">Notebook</a>
+        </div>
+        <div class="card">
+          <strong>Project C</strong> — one-line description. Tech: JavaScript, D3. <a href="#">Live</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div style="color:var(--muted)">Python · SQL · ML · Deep Learning · Docker · Kubernetes · Data Viz · Experimentation</div>
+    </section>
+
+    <footer>
+      Open to opportunities · Located in City, Country · <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    </footer>
+  </div>
+</body>
+</html>
