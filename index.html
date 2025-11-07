@@ -4,18 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Keri Gagnow — Computer & Data Science Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root{--accent:#0b6ef6;--muted:#555}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111;line-height:1.5}
+    /* Use JetBrains Mono as the primary reading font, with Fira Code for cards/code-like areas */
+    body{font-family:'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Monaco,"Segoe UI Mono","Roboto Mono","Courier New",monospace;margin:0;color:#111;line-height:1.5}
     .container{max-width:900px;margin:3rem auto;padding:1rem}
     header{display:flex;gap:1rem;align-items:center}
     img.headshot{width:96px;height:96px;border-radius:8px;object-fit:cover}
-    h1{margin:0}
-    .lead{color:var(--muted);margin-top:.25rem}
-    .buttons a{display:inline-block;margin:.5rem .5rem 0 0;padding:.5rem .75rem;border-radius:6px;text-decoration:none;color:white;background:var(--accent)}
+    h1{margin:0;font-size:1.6rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
+    h2{font-size:1.05rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-top:0}
+    .lead{color:var(--muted);margin-top:.25rem;font-style:italic}
+    .buttons a{display:inline-block;margin:.5rem .5rem 0 0;padding:.5rem .75rem;border-radius:6px;text-decoration:none;color:white;background:var(--accent);font-weight:600}
     section{margin-top:2rem}
     .projects{display:grid;gap:1rem}
-    .card{border:1px solid #eee;padding:1rem;border-radius:8px}
+    /* make project cards feel more code-like */
+    .card{font-family:'Fira Code','JetBrains Mono',ui-monospace,monospace;border:1px solid #e6eefc;padding:1rem;border-radius:8px;background:#fbfcfe}
     footer{margin-top:3rem;color:var(--muted);font-size:.9rem}
     @media(max-width:600px){header{flex-direction:column;align-items:flex-start}img.headshot{width:72px;height:72px}}
   </style>
@@ -37,27 +41,33 @@
       <h2>Selected projects</h2>
       <div class="projects">
         <div class="card">
-          <strong>Project A</strong>  <a href="#">Repo</a> · <a href="#">Demo</a>
+          <strong>Psychology Study App</strong>
+          — A web application to help psychology students create and take practice quizzes. Used Java and JavaFX in Visual Studio Code
+          on this project. <a href="#">Repo</a>
+
         </div>
         <div class="card">
-          <strong>Project B</strong> — one-line description. Tech: R, Shiny, SQL. <a href="#">Repo</a> · <a href="#">Notebook</a>
+          <strong>Android App</strong> — A simple ToDo app that uses the S pen function to create to do lists. Created using Kotlin in Android Studio <a href="#">Repo</a>
         </div>
         <div class="card">
-          <strong>Project C</strong> — one-line description. Tech: JavaScript, D3. <a href="#">Live</a>
+          <strong>Smart Bird Feeder</strong> — A smart bird feeder that uses image recognition to identify birds. Uses 2 Raspberry Pi modules and a local self-hosting server, a work in progress!  <a href="#">Live</a>
+
         </div>
       </div>
     </section>
     <h2>Education</h2>
-    <div style="color:var(--muted)"B.S. in Computer Science(2021 - 2027) - University of St. Thomas, Saint Paul, Minnesota"</div>
-    <div style="color:var(--muted)"Minor in Data Science(2024 - 2027) - University of St. Thomas, Saint Paul, Minnesota"</div>
+    <div style="color:var(--muted)">B.S. in Computer Science (2021 - 2027) - University of St. Thomas, Saint Paul, Minnesota</div>
+    <div style="color:var(--muted)">Relevant Coursework: Data Structures, Algorithms, Information Security</div>
+    <div style="color:var(--muted)">Minor in Data Science (2024 - 2027) - University of St. Thomas, Saint Paul, Minnesota</div>
+    <div style="color:var(--muted)">Relevant Coursework: Simple Statistics, Applied Regression Analysis, Multivariate Data Analysis, Data Mining and Machine Learning</div>
 
     <section>
       <h2>Skills</h2>
-      <div style="color:var(--muted)">Python ; Java ; R ; HTML"</div>
+      <div style="color:var(--muted)">Python - Java - R - HTML - SQL</div>
     </section>
 
     <footer>
-      Open to opportunities · Located in Minneapolis/St.Paul, United States · <a href="https://linkedin.com/in/keri-gagnow">LinkedIn</a>
+      Open to opportunities! · Located in Minneapolis/St.Paul, United States · <a href="https://linkedin.com/in/keri-gagnow">LinkedIn</a>
     </footer>
   </div>
 </body>
